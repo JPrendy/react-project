@@ -1,0 +1,308 @@
+.naming-form span.help-text {
+  color: black;
+  font-family: "Times New Roman";
+  font-size: 14px;
+}
+
+.naming-form span.help-text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.naming-form label {
+  font-size: 2.375rem;
+  display: inline-block;
+  margin-top: 3px;
+  line-height: 53px;
+  color: #000000;
+  font-family: "Times New Roman";
+}
+
+.naming-form label span {
+  border-bottom: 8px solid #000000;
+  color: #000000;
+}
+
+@media screen and (max-width: 780px) {
+  .naming-form label span {
+    border-bottom: 0px;
+    color: #000000;
+  }
+}
+
+.naming-form input[type='text'] {
+  color: #dfe0df;
+  text-align: left;
+  margin-top: 10px;
+  height: 48px;
+  font-size: 30px;
+  text-transform: uppercase !important;
+  background: #ffffff;
+  font-family: "Times New Roman";
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979797;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+@media screen and (max-width: 780px) {
+  .naming-form input[type='text'] {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.containerInput {
+  text-align: center;
+}
+
+/*This the part outlining the cards*/
+
+.our-card.blue-stripe,
+.our-card.blue-stripe li {
+  background: #004664;
+}
+
+.card.effect__hover:hover .card__front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.blue-stripe .card__front {
+  background: #004664;
+}
+
+.our-card figure {
+  text-align: center;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+button,
+.button {
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-family: "Times New Roman";
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 0.875rem;
+  padding-right: 1.75rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 1.75rem;
+  font-size: 0.875rem;
+  background-color: #000;
+  border-color: #000;
+  color: #ffffff;
+  transition: background-color 300ms ease-out;
+}
+
+#pick-design .info {
+  background: #ffffff;
+  color: #c2c2c2;
+}
+
+.more-info {
+  text-align: left;
+  color: #fff;
+}
+
+.more-info.inverted {
+  text-align: left;
+  color: #000;
+}
+
+h3 {
+  color: #fff;
+}
+
+.h3_inverted {
+  color: #000;
+}
+
+.button.submit-form.filled {
+  color: #000;
+  background: #fff;
+}
+
+.button.submit-form {
+  color: #000;
+  background: #fff;
+}
+
+column.small-centered,
+.columns.small-centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.large-8 {
+  width: 66.6666666667%;
+}
+
+.show-for-small {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .show-for-small {
+    display: inherit;
+  }
+}
+
+.container {
+  margin-bottom: 110px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content_main {
+  width: 33.5%;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  margin-left: 16.5%;
+}
+
+.content2 {
+  width: 33.5%;
+  float: right;
+  text-align: center;
+  display: inline-block;
+  margin-right: 16.5%;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1100px) {
+  .content_main {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-left: 0%;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1100px) {
+  .content2 {
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .content_main {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background: #f1f1f1;
+    margin-left: 0%;
+  }
+
+  .content2 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: #f1f1f1;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 0px;
+  }
+
+  .form-msg {
+    background: #cc0000;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .form-errors {
+    background: #f1f1f1;
+  }
+}
+
+.content3 {
+  width: 100%;
+  float: right;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+@media screen and (max-width: 660px) {
+  .container {
+    margin-bottom: 130px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Badge_label {
+    display: none;
+  }
+}
+
+.form-msg {
+  background: #cc0000;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+#badge-sign-up {
+  background: #000;
+}
+
+.arrow_indicator {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .arrow_indicator {
+    display: none;
+  }
+}
+
+.badgeh {
+  display: block;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+  .badgeh {
+    display: none;
+  }
+}
+
+.badgedesc {
+  display: block;
+}
+
+@media screen and (max-width: 1100px) {
+  .badgedesc {
+    display: none;
+  }
+}

@@ -1,0 +1,119 @@
+.main-title-inactive {
+  display: none;
+}
+
+.main-title {
+  position: fixed;
+  margin-top: -340px;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-title_op3 {
+  position: fixed;
+  margin-top: -340px;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.3;
+}
+
+.main-title_op5 {
+  position: fixed;
+  margin-top: -340px;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.main-title_op7 {
+  position: fixed;
+  margin-top: -340px;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.header_nym_active {
+}
+
+@media screen and (max-width: 1024px) {
+  .header_nym_active {
+    display: none;
+  }
+}
+
+.header_nym_inactive {
+  display: none;
+}
+
+#home-imgs {
+  /*display: none;*/
+  position: fixed;
+  margin-top: -290px;
+  width: 100%;
+  z-index: 10;
+}
+
+#badge-seq {
+  /*This is commented out for now  opacity:0;  */
+}
+
+.scroll-container {
+  height: 6000px;
+}
+
+.scroll-container-finish {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.show_op3 {
+  display: block;
+  opacity: 0.3;
+}
+.show_op5 {
+  display: block;
+  opacity: 0.5;
+}
+.show_op7 {
+  display: block;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.scroll-to-begin {
+  -webkit-animation: bounce 0.7s linear infinite alternate;
+  -moz-animation: bounce 0.7s linear infinite alternate;
+  -o-animation: bounce 0.7s linear infinite alternate;
+  -ms-animation: bounce 0.7s linear infinite alternate;
+  animation: bounce 0.7s linear infinite alternate;
+}
+
+.scroll-to-begin {
+  font-size: rem-calc(10);
+  display: block;
+  text-transform: uppercase;
+}
+
+.scroll-to-begin {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}

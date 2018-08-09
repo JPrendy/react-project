@@ -1,0 +1,1412 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+===================
+General
+===================
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tagline,
+.intro {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p,
+.panel {
+  font-size: rem-calc(12);
+}
+
+
+body {
+  font-family: "Times New Roman";
+  background: #ffffff;
+}
+
+h3,
+h2,
+h4,
+h5,
+h6,
+.naming-form label {
+  font-family: "Times New Roman";
+  line-height: 1em;
+}
+
+h1 {
+  font-family: "Times New Roman";
+}
+
+section {
+  display: block;
+}
+
+a {
+  color: white;
+}
+
+/*
+===================
+Setting Font colours
+===================
+*/
+
+/*
+===================
+Helper fonts
+===================
+*/
+
+.dulldown {
+  font-size: 10px;
+}
+
+.dulldown a {
+  color: #cc0000 !important;
+}
+
+#badge-desc {
+  padding-top: 120px;
+  padding-left: 25px;
+}
+
+/*this is a field that point to that uri redirect
+may be relevant later */
+
+#frm-userdetails {
+  max-width: 280px;
+  margin: 0 auto;
+  p {
+    color: #000;
+  }
+  input {
+    height: 48px;
+  }
+}
+
+/*
+===================
+Common Shared Styles
+===================
+*/
+
+.logo {
+  max-height: 80px;
+  margin-top: 10px;
+  float: right;
+}
+
+.naming-page {
+  background: #f1f1f1;
+}
+
+.scroll-to-begin {
+  -webkit-animation: bounce 0.7s linear infinite alternate;
+  -moz-animation: bounce 0.7s linear infinite alternate;
+  -o-animation: bounce 0.7s linear infinite alternate;
+  -ms-animation: bounce 0.7s linear infinite alternate;
+  animation: bounce 0.7s linear infinite alternate;
+  display: block;
+  text-transform: uppercase;
+}
+
+.deets input[type='text'] {
+  color: #000 !important;
+  text-transform: capitalize;
+}
+
+.full {
+  width: 100%;
+}
+
+.button span {
+  line-height: 0;
+  position: relative;
+  bottom: -1px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  height: auto;
+  min-height: 80px;
+  padding: 10px 50px 0 0;
+  width: 100%;
+}
+
+footer .container_login {
+  height: auto;
+  min-height: 42px;
+  width: 100%;
+}
+
+footer .container .footer-list {
+  float: left;
+  list-style: outside none none;
+}
+
+footer .footer-logo {
+  float: right;
+  max-height: 40px;
+  height: auto;
+}
+
+
+
+.naming-form label {
+  font-family: "Times New Roman";
+}
+
+.card_back_Orange {
+  background-color: #86191d;
+}
+
+.card_back_SpeedStripesBlue {
+  background-color: #004664;
+}
+
+.card_back_RayNoName {
+  background-color: #FFF;
+}
+
+.card_back_MiniTartanNoName {
+  background-color: #b0b0b0;
+}
+
+.card_back_BlackJackNoName {
+  background-color: #1c1d1d;
+}
+
+.card_back_GreenStripes {
+  background-color: #668d7d;
+}
+
+.card_back_speedStripesBourbon {
+  background-color: #269900;
+}
+
+.card_back_SpeedStripesWhite {
+  background-color:  #ff9999;
+}
+
+.card_back_SpeedStripesGinger {
+  background-color: #ffff80;
+}
+
+.card_back_JcwNoName {
+  background-color: #000000;
+}
+
+.ui.card > .content {
+  padding-top: 35px;
+  background-color: #256997;
+  line-height: auto;
+  height: 200px;
+  position: relative;
+}
+
+.ui.card {
+  position: relative;
+  float: left;
+  width: 20%;
+  text-align: center;
+  min-height: 390px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 780px) {
+  .ui.card {
+    width: 100%;
+  }
+}
+
+.ui.label {
+  padding-top: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 780px) and (max-width: 900px) {
+  .ui.header {
+    text-align: left;
+    border-bottom: solid;
+    border-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+    padding-right: 40px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .ui.header {
+    text-align: left;
+    border-bottom: solid;
+    border-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+    padding-right: 30px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 850px) {
+  div.ui.image.label {
+    padding-top: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.ui.header {
+  text-align: left;
+  border-bottom: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 5px;
+  margin: 5px 10px 5px 10px;
+  font-size: 27px;
+}
+
+.ui.container,
+.ui.card > .content,
+.ui.card > .header {
+  transition: 0.3s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+/*Removing this for the time being until the back card like button is available
+:hover > .ui.container, */
+:hover > .ui.card > .content,
+.ui.card > .header {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+#redBtn {
+  background: red;
+  position: relative;
+  z-index: 2;
+}
+
+.ui > .header {
+  padding-top: 35px;
+}
+
+.descriptionparagraph {
+  padding-top: 8px;
+  float: left;
+}
+
+.ui > .description {
+  font-size: 18px;
+  background: white;
+  bottom: 30px;
+}
+
+.backWrapper {
+  text-align: left;
+}
+
+.buttonwrapper {
+  height: 150px;
+  top: 40px;
+  display: block;
+  border-left: 0.5px solid rgba(151, 151, 151, 0.25);
+  border-right: 0.5px solid rgba(151, 151, 151, 0.25);
+  margin: 0 auto;
+  background: white;
+  z-index: 1;
+  position: relative;
+}
+
+.badgetitles {
+  padding-top: 25px;
+}
+
+#badgetitle {
+  bottom: 98px;
+  color: black;
+}
+
+#buttonback {
+  bottom: 80px;
+  bottom: 100px;
+  left: 1px;
+}
+
+.ui.card > .content.SpeedStripesGinger {
+  background: #ffff80;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.SpeedStripesGinger {
+    font-size: 14px;
+  }
+}
+
+/*May not be necessary*/
+.ui.card > .content:after,
+.ui.container.white {
+  background: #ffff;
+  right: -10px;
+
+  left: -10px;
+  bottom: -265px;
+  top: 235px;
+  height: 150px;
+  padding-bottom: 10px;
+
+  position: absolute;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  border-left: 0.5px solid rgba(151, 151, 151, 0.25);
+  border-right: 0.5px solid rgba(151, 151, 151, 0.25);
+}
+
+.ui.card > .content.SpeedStripesGinger:after,
+.ui.container.SpeedStripesGinger {
+  background: #ffff80;
+  content: 'SPEED STRIPPES';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.JcwNoName {
+  background: #000000;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.JcwNoName {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.JcwNoName:after,
+.ui.container.JcwNoName {
+  background: #000000;
+  content: 'THE RING';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.SpeedStripesWhite {
+  background:  #ff9999;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.SpeedStripesWhite {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.SpeedStripesWhite:after,
+.ui.container.SpeedStripesWhite {
+  background-color:  #ff9999;
+  content: 'CLASSIC';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.speedStripesBourbon {
+  background: #269900;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.speedStripesBourbon {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.speedStripesBourbon:after,
+.ui.container.speedStripesBourbon {
+  background: #269900;
+  content: 'CLASSIC';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.GreenStripes {
+  background: #668d7d;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.GreenStripes {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.GreenStripes:after,
+.ui.container.GreenStripes {
+  background: #668d7d;
+  content: 'IRISH PRIDE';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.BlackJackNoName {
+  background: #1c1d1d;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.BlackJackNoName {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.BlackJackNoName:after,
+.ui.container.BlackJackNoName {
+  background: #1c1d1d;
+  content: 'BALANCE';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.MiniTartanNoName {
+  background: #b0b0b0;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.MiniTartanNoName {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.MiniTartanNoName:after,
+.ui.container.MiniTartanNoName {
+  background: #b0b0b0;
+  content: 'MINI TARTAN';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.RayNoName {
+  background: #FFF;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.RayNoName {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.RayNoName:after,
+.ui.container.RayNoName {
+  background: #FFF;
+  content: 'WHITE STRIPE';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+.ui.card > .content.Orange {
+  background: #86191d;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.Orange {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.Orange:after,
+.ui.container.Orange {
+  background: #86191d;
+  content: 'ORANGE';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.ui.card > .content.SpeedStripesBlue {
+  background: #004664;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+  .ui.card > .content.SpeedStripesBlue {
+    font-size: 14px;
+  }
+}
+
+.ui.card > .content.SpeedStripesBlue:after,
+.ui.container.SpeedStripesBlue {
+  background: #004664;
+  content: 'CLASSIC';
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+body#home .full-page-wrapper {
+  background: #ffffff;
+}
+
+.full-page-wrapper {
+  min-height: 100vh;
+  height: 100vh;
+
+  @include display(flex);
+
+  @include flex-direction(column);
+}
+
+.content-body {
+  @include flex(1);
+
+  @include display(flex);
+
+  @include flex-direction(column);
+}
+
+#home {
+  @include flex(1);
+}
+
+.tag-line-intro {
+  padding-top: 80px;
+
+  @include display(flex);
+
+  @include align-items(center);
+
+  @include justify-content(center);
+}
+
+.line-it-before::before,
+.line-it-after::after {
+  border-bottom: 1px solid;
+  content: '';
+  display: block;
+  margin: 15px auto 15px auto;
+  width: 50px;
+}
+
+.tagline {
+  display: inline-block;
+}
+
+.tag-wrap {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h1.main-title {
+  color: black;
+}
+
+.naming-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.naming-form {
+  padding: 50px 0;
+  background: #f1f1f1;
+}
+
+.naming-elements {
+}
+
+#pick-design .info {
+  background: white;
+  color: $dulltext;
+}
+
+.info .button.filled {
+  background: white;
+}
+
+#id_code {
+  background: white;
+}
+
+.naming-form input[type='text'] {
+  color: $dulltext;
+  text-align: left;
+  margin-top: 10px;
+  height: 50px;
+  font-size: rem-calc(30);
+  text-transform: uppercase !important;
+  background: white;
+}
+
+.naming-form span.help-text {
+  font-size: rem-calc(15);
+}
+
+.scroll-to-begin {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.blinky-scroll {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+// #right-label {margin-top:10px; height:50px}
+
+/* Depending on the screensize we have to adjust the padding and image widht and font sizes. */
+
+.flip {
+  display: inline-block;
+}
+
+.info {
+  text-align: center;
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 1px solid rgba(151, 151, 151, 0.25);
+}
+
+.info h3 {
+  font-size: 18px;
+}
+
+.info button,
+.info .button {
+  background: white;
+  color: $miniBlack;
+  font-family: "Times New Roman";
+  font-size: rem-calc(15);
+}
+
+.info button:hover,
+.info .button:hover {
+  background: white;
+  color: #000000;
+}
+
+.errorlist {
+  list-style-type: none;
+  margin: 0;
+  font-size: rem-calc(12);
+}
+
+.errorlist li {
+  text-align: center;
+  color: $miniRed;
+}
+
+.badge-to-be-approved {
+  position: relative;
+}
+
+//.badge-to-be-approved
+.chosen-text.iheart {
+  top: 38%;
+}
+
+.chosen-text.tartan {
+  top: 36%;
+}
+
+.chosen-text.hi-my-name-is {
+  top: 36%;
+}
+
+.chosen-text.green-racing-stripes {
+  top: 36%;
+}
+
+.chosen-text.speed-stripes-white {
+  color: $miniBlack;
+  top: 38%;
+}
+
+.happy-wear-badge {
+  max-width: 300px;
+  display: block;
+  margin: 50px auto;
+}
+
+.badge-label {
+  position: absolute;
+  width: 255px;
+  right: -255px;
+  top: 92px;
+  color: #000;
+
+  h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: rem-calc(30);
+    color: #000;
+  }
+
+  p {
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 25px;
+  }
+}
+
+.tiny-badge {
+  top: 14px;
+  right: 6px;
+  position: absolute;
+}
+
+.tiny-badge img {
+  max-height: 60px;
+}
+
+.b {
+  position: relative;
+}
+
+.more-info {
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
+.h3b {
+  margin: 30px 20px 20px 20px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.break {
+  display: inline;
+}
+
+.more-info {
+  text-align: left;
+}
+
+.chosen-text {
+  position: absolute;
+  top: 36%;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.chosen-text.mini-ray {
+  color: #000;
+}
+
+/*
+The adjustables
+for each resolution - test and fit to size accordingly.
+.our-card figure{ padding-top:40px; padding-bottom:40px}
+.our-card figure .typed-name { font-size:13px; top:43%; }
+.our-card figure img { max-width:140px}
+
+.info { background:#1F1818; padding-top:30px; padding-bottom:30px;}
+.info h3 { font-size:18px}
+*/
+
+/* End Adjustments */
+
+.info .button.filled {
+  background: white !important;
+  color: #000;
+}
+
+// .border-wrap {border:10px solid $miniRed; margin-top:30px; padding:20px}
+.border-wrap {
+}
+
+// section {min-height:500px;}
+// section #pick-design, #name-it, #your-details, #finished {position:absolute;}
+
+.home-img-stack {
+  margin-top: 300px;
+}
+#home-imgs {
+  right: 0px;
+  left: 0px;
+}
+.name-img-stack {
+  height: 300px;
+}
+
+.uturn {
+  border: 1px solid #4b4b4b;
+  position: relative;
+}
+
+i.ico-uturn {
+  display: block;
+  height: 27px;
+  width: 32px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.bounding-box {
+  border: 10px solid #000;
+  padding: 20px 30px;
+  font-size: rem-calc(13);
+  background: #fff;
+  color: $miniBlack;
+}
+
+.named-it {
+  font-size: rem-calc(30);
+}
+
+.grill-holder {
+  position: relative;
+}
+
+.grill-holder-test {
+  position: absolute;
+  top: -1000px;
+}
+
+.badge-position {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  bottom: -200px;
+}
+
+.badge-position-test {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  bottom: -200px;
+  top: 185px;
+  left: 0px;
+}
+
+.grill-no {
+  display: block;
+  max-height: 450px;
+  margin: 0 auto;
+}
+
+.welcome-wrapper {
+  z-index: 1;
+  margin-top: -18px;
+}
+
+.persons-name {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  top: 55px;
+  width: 100%;
+}
+
+.persons-name-test {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  top: 242px;
+  width: 100%;
+}
+
+.persons-name.iheart {
+  top: 55px;
+  font-size: 20px;
+}
+
+.persons-name.tartan {
+  top: 55px;
+  font-size: 20px;
+}
+
+.persons-name.hi-my-name-is {
+  color: #ffffff;
+  top: 54px;
+  font-size: 20px;
+}
+
+.persons-name.green-racing-stripes {
+  color: $miniBlack;
+  top: 73px;
+  font-size: 20px;
+}
+
+// S. sean insert
+.persons-name.mini-ray {
+  color: $miniBlack;
+}
+
+.persons-name.speed-stripes-white {
+  color: $miniBlack;
+}
+
+.lovemini .chosen-text {
+  color: #000;
+  font-size: 40px;
+  top: 44%;
+}
+
+.name-is-mini .chosen-text {
+  color: #000;
+  font-size: 40px;
+  top: 49%;
+}
+
+//FINAL PAGE
+.cheers {
+  font-size: rem-calc(30);
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.cheers:before {
+  border-top: 2px solid #000000;
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  margin-right: 18px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.cheers:after {
+  border-top: 2px solid #000000;
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  margin-left: 18px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+/* small only */
+@media only screen and (max-width: 40em) {
+  .card__back {
+    display: none;
+  }
+
+  .logo {
+    height: 33px;
+  }
+
+  h1.main {
+    font-size: 20px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .tagline {
+    border-bottom: none;
+    border-top: none;
+    display: block;
+    font-size: rem-calc(36);
+    line-height: 1em;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .tagline span {
+    display: block;
+  }
+
+  .welcome label {
+    font-size: 12px;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .welcome input[type='text'] {
+    color: #dfe0df;
+    height: 60px;
+    margin-top: 10px;
+    padding: 0 30px !important;
+    text-align: center;
+    background: white;
+  }
+
+  section {
+    min-height: auto;
+  }
+
+  label.right {
+    tt: none !important;
+    text-align: left;
+  }
+
+  .naming-form label {
+    font-size: 1rem;
+  }
+
+  .naming-form {
+    padding: 25px 0;
+  }
+
+  .naming-form-label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .naming-form label {
+    font-size: 18px !important;
+  }
+
+  .naming-form label span {
+    font-size: 30px !important;
+    border-bottom: none;
+  }
+
+  label.right::after {
+    content: '';
+    font-size: 18px;
+    margin-right: 11px;
+    top: 2px;
+  }
+
+ 
+  .badge-label {
+    display: none;
+  }
+
+  .happy-wear-badge {
+    max-width: 240px;
+  }
+
+  .ico-uturn {
+    display: none !important;
+  }
+
+  #finished .badge-position {
+    bottom: -415px;
+  }
+
+  @media screen and (max-width: 640px) {
+    #finished .badge-position {
+      bottom: -200px;
+    }
+  }
+
+  .drop-mobil {
+    display: block;
+  }
+
+  .centered-text h2 {
+    font-size: 20px;
+  }
+
+  .happy-wear-badge {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .chosen-text {
+    top: 36%;
+  }
+
+  .badge-to-be-approved .chosen-text {
+    font-size: 28px;
+  }
+
+  .badge-to-be-approved .chosen-text.stripes-blue {
+    top: 35%;
+  }
+
+  .badge-to-be-approved .chosen-text.hi-my-name-is {
+    top: 36%;
+  }
+
+  .badge-to-be-approved .chosen-text.green-racing-stripes {
+    top: 36%;
+  }
+
+  .badge-to-be-approved .chosen-text.speed-stripes-white {
+    color: #000000;
+    top: 35%;
+  }
+
+  .form-elements {
+    padding-top: 40px;
+  }
+
+  .tag-line-intro {
+    padding-top: 20px;
+  }
+
+  .legal-link {
+    margin-left: 0;
+    margin-top: 17px;
+    font-size: rem-calc(10);
+  }
+
+  footer {
+    height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  footer .footer-logo {
+    max-height: 20px;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+
+  .name .logo {
+    margin-right: 10px;
+  }
+
+  .welcome label {
+    max-width: 200px;
+  }
+}
+
+// end media-query
+
+/* between small and medium only */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .welcome input[type='text'] {
+    color: #dfe0df;
+    height: 120px;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 0 30px !important;
+    text-align: center;
+  }
+
+  label.right {
+    float: right !important;
+    text-align: right;
+  }
+
+  .badge-label {
+    position: relative;
+    display: none;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  body#home {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #bgvid {
+    display: none;
+  }
+}
+
+/* medium and up */
+@media only screen and (min-width: 40.063em) {
+  .welcome input[type='text'] {
+    font-size: rem-calc(30);
+  }
+
+  .logo {
+    max-height: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .name {
+    .logo {
+      margin-right: 50px;
+    }
+  }
+
+  .blinky-scroll {
+    max-height: 70px;
+  }
+
+  .badge-grill img {
+    max-height: 700px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .badge-grill img {
+      max-height: 500px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .badge-to-be-approved .chosen-text.hi-my-name-is {
+    top: 37%;
+  }
+
+  .badge-to-be-approved .chosen-text.green-racing-stripes {
+    top: 37%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .main {
+    margin-top: 220px;
+  }
+
+  .button.submit-form {
+    font-size: 0.675rem;
+    padding: 10px 10px;
+  }
+
+  .medium-6.approved-section {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 640px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  .card {
+    position: relative;
+    float: left;
+    width: 20%;
+    text-align: center;
+    min-height: 420px;
+  }
+
+  .back-side {
+    min-height: 190px;
+  }
+
+  #finished .badge-position {
+    bottom: -340px;
+  }
+
+  .tiny-badge {
+    display: none;
+  }
+
+  .more-info {
+    font-size: 12px;
+  }
+
+  .card__back {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+@media only screen and (min-width: 64.063em) {
+  /* 22px   */
+
+  .tagline {
+    font-size: rem-calc(70);
+    font-family: "Times New Roman";
+    color: $miniBlack;
+  }
+}
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+}
+
+@media only screen and (min-width: 90.063em) {
+}
+
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+}
+
+@media only screen and (min-width: 120.063em) {
+}

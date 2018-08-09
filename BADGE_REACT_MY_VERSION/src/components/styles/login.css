@@ -1,0 +1,102 @@
+.tag-line-intro {
+  padding-top: 80px;
+
+  @include display(flex);
+
+  @include align-items(center);
+
+  @include justify-content(center);
+}
+
+.tag-wrap {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  float: right;
+  max-height: 40px;
+  height: auto;
+}
+
+.footer-list {
+  float: left;
+  list-style: outside none none;
+}
+
+#id_code {
+  border-radius: 0;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979797;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0 0 1rem 0;
+  margin-top: 0px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #id_code {
+    height: 60px;
+    text-align: center;
+  }
+}
+
+#inner-home {
+  background: #f1f1f1;
+  height: 100%;
+  min-height: 100%;
+}
+
+.line-it-before::before,
+.line-it-after::after {
+  border-bottom: 2px solid;
+  content: '';
+  display: block;
+  margin: 15px auto 15px auto;
+  width: 50px;
+}
+
+.form-elements {
+  padding-top: 80px;
+  text-align: center;
+}
+
+h1.main {
+  font-size: 28px;
+  color: Black;
+  font-family: "Times New Roman";
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover {
+  color: #008cba;
+}
+
+.row.badge-grill {
+  display: block;
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Times New Roman";
+  text-align: center;
+}
+
+.form-elements label {
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+}
+
+.container_login {
+  margin-bottom: 50px;
+}

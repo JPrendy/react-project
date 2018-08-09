@@ -1,0 +1,100 @@
+h1.main-form {
+  font-size: 2.375rem;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  
+}
+
+@media screen and (max-width: 640px) {
+  h1.main-form {
+    font-size: 1.625rem;
+  }
+}
+
+.tagline-form {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 44px;
+  margin-top: 30px;
+  color: #000;
+  font-size: 1rem;
+}
+
+.badge-position {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  right: 0px;
+}
+
+.named-it {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*this isn't a fully functional class*/
+
+.cool {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-family: "Times New Roman";
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979797;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.4375rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+.error {
+  display: none;
+}
+
+.error2 {
+  display: block;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  margin-top: -20px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  background: #b60000;
+  color: #ffffff;
+}
+
+
+.ui.form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#give-us-deets-submit {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#update-notice {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+#privacy-disclaimer {
+  width: 300px;
+  margin: 0 auto;
+}
